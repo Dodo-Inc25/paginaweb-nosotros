@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Dodo Inc</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="nav">
+            <div class="brand">
+                <div class="brand-badge" aria-hidden="true"></div>
+                <span>Dodo Inc</span>
+            </div>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="contacto.html">Contáctanos</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO / Inicio -->
+    <main id="inicio" class="hero">
+        <section>
+            <p class="eyebrow">Desarrollo Web · SEO · E‑Commerce</p>
+            <h1>Impulsamos tu negocio con páginas web modernas, rápidas y efectivas</h1>
+            <p class="subtitle">Creamos sitios web a medida que convierten visitas en clientes. Diseño adaptable,
+                rendimiento
+                optimizado y enfoque en resultados desde el primer día.</p>
+            <div class="cta-row">
+                <a class="btn btn-primary" href="servicios.html">Ver servicios</a>
+                <a class="btn" href="contacto.html">Solicitar propuesta</a>
+            </div>
+            <div class="sub-bar">
+                <span>⚡ Entrega ágil</span>
+                <span>•</span>
+                <span>🔒 Sitios seguros</span>
+                <span>•</span>
+                <span>📈 Listos para SEO</span>
+            </div>
+        </section>
+
+        <aside class="hero-card" aria-label="Vista previa de proyecto">
+            <div class="mock">
+                <div class="bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+                <div class="content">
+                    <div class="block"></div>
+                    <div class="block"></div>
+                </div>
+            </div>
+            <p class="sub-bajo">Mockup ilustrativo del
+                sitio (replace con
+                captura o animación corta).</p>
+        </aside>
+    </main>
+
+    <!-- Propuesta de valor -->
+    <section class="section" aria-labelledby="valor">
+        <h2 id="valor">¿Por qué elegirnos?</h2>
+        <div class="grid-4" style="margin-top:14px;">
+            <article class="card">
+                <div class="icon">📱</div>
+                <h3>Diseño responsive</h3>
+                <p>Se ve perfecto en móviles, tablets y escritorio.</p>
+            </article>
+            <article class="card">
+                <div class="icon">🚀</div>
+                <h3>Rendimiento optimizado</h3>
+                <p>Cargas ultrarrápidas con buenas prácticas Core Web Vitals.</p>
+            </article>
+            <article class="card">
+                <div class="icon">🔎</div>
+                <h3>SEO técnico incluido</h3>
+                <p>Estructura y etiquetas listas para posicionar.</p>
+            </article>
+            <article class="card">
+                <div class="icon">🤝</div>
+                <h3>Soporte cercano</h3>
+                <p>Acompañamiento y mejoras continuas post‑lanzamiento.</p>
+            </article>
+        </div>
+    </section>
+
+
+    <!-- CTA final -->
+    <section class="section">
+        <div class="cta">
+            <h2>¿Listo para despegar tu presencia digital?</h2>
+            <p style="color: var(--muted)">Cuéntanos tu idea y en 24–48h te enviamos una propuesta a medida.</p>
+            <div class="cta-row" style="justify-content:center;">
+                <a class="btn btn-primary" href="contacto.html">Contáctanos</a>
+                <a class="btn" href="nosotros.html">Conoce al equipo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (incluye anclas para maquetación futura) -->
+    <footer id="contacto" class="section">
+        <div class="footer-grid">
+            <div>
+                <h3>Hablemos de tu proyecto</h3>
+                <p class="subtitle">Escríbenos y agenda una reunión sin costo.</p>
+                <form onsubmit="event.preventDefault(); alert('Demo: aquí se gestionará el formulario.');"
+                    class="form-contacto">
+                    <input required placeholder="Nombre" class="input" />
+                    <input required type="email" placeholder="Correo" class="input" />
+                    <textarea required placeholder="Cuéntanos brevemente tu idea" rows="4" class="input"></textarea>
+                    <button class="btn btn-primary" type="submit">Enviar</button>
+                </form>
+            </div>
+
+            <div id="nosotros" class="card">
+                <h3>Contáctanos</h3>
+                <p class="muted">
+                    Equipo experto en diseño, desarrollo y posicionamiento web. Trabajamos
+                    de forma ágil, transparente y enfocada en resultados.
+                </p>
+                <div class="info-contacto">
+                    <div>📍 Santiago, Chile</div>
+                    <div>✉️ contacto@tuagenciaweb.com</div>
+                    <div>☎️ +56 9 1234 5678</div>
+                    <a>📷 Instagram</a>
+                </div>
+            </div>
+        </div>
+
+        <p class="footer-copy">
+            © <span id="year"></span> Dodo Inc. Todos los derechos reservados.
+        </p>
+    </footer>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
