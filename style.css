@@ -259,12 +259,9 @@ header{
     margin-top: 10px;
     display: grid;
     gap: 8px;
-}
-
-.footer-copy {
-    margin-top: 18px;
     color: var(--muted);
 }
+
 
 #logoNavbar{
     height: 31px;
@@ -278,15 +275,6 @@ header{
         display: flex !important;
         flex-basis: auto;  
         margin-left: 700px;  
-    }
-}
-
-@media (min-width: 768px) {
-    .col-md-4 {
-        flex: 0 0 auto;
-        width: 33.33333333%;
-        display: flex;
-        justify-content: center;
     }
 }
 
@@ -327,5 +315,44 @@ header{
     margin: 0 auto;
     padding: 34px 20px 40px;
 }
+
+/* Contacto*/
+.contact {
+  max-width: 1200px; /* más manejable que 2150px */
+  margin: 0 auto;
+  padding: 34px 20px 40px;
+}
+
+.card-mail {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px;
+  box-shadow: var(--shadow);
+}
+
+/* footer */
+footer { 
+    background-color: var(--card); /* color de fondo del footer */
+    padding: 20px 0;       /* espacio interno */
+    text-align: center;    /* centrar el texto */
+    border-top: 1px solid var(--border); /* línea superior */  
+}
+
+#C{
+    margin-top:18px; 
+    color:var(--muted);
+}
+
+.textfooter{
+    list-style: none; 
+    padding: 0; 
+    margin: 0;
+}
+
+.themelogo{
+    color: var(--text);
+}
+
 
 
