@@ -283,7 +283,7 @@ header{
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    padding: 34px 20px 40px;
+    padding: 34px 73px 40px;
 }
 
 .card .card-title {
@@ -307,7 +307,7 @@ header{
 }
 
 #parrafos{
-    margin-top: 43px;
+    margin-top: 12px;
 }
 
 #columnatexto{
@@ -354,5 +354,32 @@ footer {
     color: var(--text);
 }
 
+/* tarjetas equipo*/
+.imgteam{
+    width: 235px;
+}
+
+.cardteam{
+    display: flex; 
+    justify-content: center;
+    transition: transform .2s; /* Animation */
+}
+
+.cardteam:hover {
+    transform: scale(1.05);
+}
+
+.cardsequipo{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: 24px;
+    margin-left: 24px;
+}
+
+#titleteam{
+    display: flex; 
+    justify-content: center;
+}
 
 
