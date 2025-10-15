@@ -197,9 +197,9 @@ header{
 
 /* Services Preview */
 .grid-3 {
-    display: grid;
-    gap: 16px;
-    grid-template-columns: repeat(3, 1fr);
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
 .service-thumb {
@@ -263,8 +263,9 @@ header{
 }
 
 
-#logoNavbar{
-    height: 31px;
+.logoNavbar{
+    width: 50px; 
+    height: 50px;
     border-radius: 11px;
 }
 
@@ -340,7 +341,7 @@ footer {
 }
 
 #C{
-    margin-top:18px; 
+    margin-top:12px; 
     color:var(--muted);
 }
 
@@ -382,4 +383,56 @@ footer {
     justify-content: center;
 }
 
+.cardservices{
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
 
+.cardservices:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 35px rgba(30, 64, 175, 0.55); /* Glow azul */
+}
+
+/* Precios */
+.price-normal {
+  color: var(--muted);
+  font-size: 14px;
+  text-decoration: line-through;
+}
+
+.price-oferta {
+  color: var(--brand-2); /* Verde llamativo */
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.extras-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.extras-wrapper .cardservices{
+  max-width: 360px;
+  width: 100%;
+}
+
+.titleservices{
+    display: flex; 
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+ul.navbar-nav a:hover{ 
+    color: #fff !important; 
+    background-color: transparent !important;
+}
+
+#NavbarMobil{
+    background-color: #22c55e;
+}
