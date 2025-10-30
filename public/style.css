@@ -271,11 +271,47 @@ header{
 
 /*ajste de pantalla*/
 
-@media (min-width: 992px) {
+@media(min-width: 992px){
     .navbar-expand-lg .navbar-collapse {
         display: flex !important;
         flex-basis: auto;  
         margin-left: 700px;  
+    }
+
+}
+
+@media (max-width: 991px) {
+
+     /* Asegura que el contenedor principal apile el texto y la imagen */
+    #inicio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+  /* Elimina restricciones internas del aside */
+    #inicio aside {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 1.5rem;
+    }
+
+  /* Corrige la "card" del aside que limita la imagen */
+    #inicio aside .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+  /* Aplica tamaño real a la imagen */
+    #inicio aside img {
+        width: 80vw; /* ocupa 80% del ancho de la pantalla */
+        max-width: 360px; /* límite para que no se agrande demasiado */
+        height: auto;
+        border-radius: 16px;
+        object-fit: contain;
     }
 }
 
@@ -440,4 +476,13 @@ a.navbar-brand{
 
 #NavbarMobil{
     background-color: #22c55e;
+}
+
+#Formulario{
+    margin-top: 12px;
+}
+
+.ContactForm{
+    background-color: var(--muted);
+    margin-top: 12px;
 }
