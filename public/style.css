@@ -59,6 +59,7 @@ header{
     background: linear-gradient(135deg, var(--brand), var(--brand-2));
     box-shadow: var(--shadow);
 }
+
 .navbar .navbar-nav{
     max-width: 1150px;
     margin: 0 auto;
@@ -66,7 +67,6 @@ header{
     display: flex;
     justify-content: space-between;
 }
-
 
 .navbar a{
     color: var(--text);
@@ -315,6 +315,14 @@ header{
     }
 }
 
+@media (min-width: 768px) {
+    .col-md-4{
+        flex: 0 0 auto;
+        width: 33.33333333%;
+        text-align: center;
+    }
+}
+
 /* Nosotros*/
 #nosotros{
     display: flex;
@@ -345,6 +353,7 @@ header{
 
 #parrafos{
     margin-top: 12px;
+    text-align: justify;
 }
 
 #columnatexto{
@@ -412,6 +421,7 @@ footer {
     margin-top: calc(-1 * var(--bs-gutter-y));
     margin-right: 24px;
     margin-left: 24px;
+    margin-bottom: 50px;
 }
 
 #titleteam{
@@ -486,3 +496,4 @@ a.navbar-brand{
     background-color: var(--muted);
     margin-top: 12px;
 }
+
